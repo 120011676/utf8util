@@ -1,6 +1,6 @@
 # HeyDon-Lee/hdUnicode
 * Golang gets the position of the Unicode character.
-* Golang获取Unicode字符的位置。
+* Golang 获取 Unicode 字符所在位置
 
 # Install
 ```
