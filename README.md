@@ -46,5 +46,10 @@ func main() {
 	println(hdUnicode.SubString(`你好！世界`, 3, 4))
 	println(hdUnicode.SubString(`こんにちは！世界！世界`, 3, 4))
 	println(hdUnicode.SubString(`안녕하세요！세계！세계`, 3, 4))
+
+	// The location of the fetched substring of large text.
+	println(hdUnicode.LargeIndex(`你好！世界`, `世界`))
+	println(hdUnicode.LargeIndex(`こんにちは！世界`, `世界`))
+	println(hdUnicode.LargeIndex(`안녕하세요！세계`, `세계`))
 }
 ```
