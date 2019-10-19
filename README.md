@@ -2,12 +2,12 @@
 * Golang gets the position of the Unicode character.
 * Golang 获取 Unicode 字符所在位置
 
-# Install / 安装
+# Install
 ```
 go get github.com/HeyDon-Lee/hdUnicode
 ```
 
-# Examples / 代码实例
+# Examples
 ```go
 package main
 

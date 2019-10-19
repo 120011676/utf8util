@@ -2,7 +2,6 @@ package hdUnicode
 
 import "strings"
 
-// Get the position of the character
 // UniIndexOne returns the index of the first instance of substr in s, or -1 if substr is not present in s.
 func UniIndexOne(str, substr string) int {
 	switch strings.Index(str, substr) {
