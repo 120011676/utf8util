@@ -2,8 +2,8 @@ package hdUnicode
 
 import "strings"
 
-// UniIndexOne returns the index of the first instance of substr in s, or -1 if substr is not present in s.
-func UniIndexOne(str, substr string) int {
+// IndexOne returns the index of the first instance of substr in s, or -1 if substr is not present in s.
+func IndexOne(str, substr string) int {
 	switch strings.Index(str, substr) {
 	case 0:
 		return 0

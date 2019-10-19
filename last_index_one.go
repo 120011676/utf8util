@@ -2,8 +2,8 @@ package hdUnicode
 
 import "strings"
 
-// UniLastIndexOne returns the index of the last instance of substr in s, or -1 if substr is not present in s.
-func UniLastIndexOne(str, substr string) int {
+// LastIndexOne returns the index of the last instance of substr in s, or -1 if substr is not present in s.
+func LastIndexOne(str, substr string) int {
 	switch strings.LastIndex(str, substr) {
 	case 0:
 		return 0

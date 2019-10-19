@@ -1,20 +1,16 @@
 # HeyDon-Lee/hdUnicode
----
 * A Go Programming package for processing UniCode character data.
 
 ## Features
----
 * high performance
 * easy to use
 
 ## Install
----
 ```
 go get github.com/HeyDon-Lee/hdUnicode
 ```
 
 ## Examples
----
 ```go
 package main
 
@@ -22,23 +18,33 @@ import "github.com/HeyDon-Lee/hdUnicode"
 
 func main() {
 	// Gets the position of the string.
-	println(hdUnicode.UniIndex(`你好！世界`, `世界`))
-	println(hdUnicode.UniIndex(`こんにちは！世界`, `世界`))
-	println(hdUnicode.UniIndex(`안녕하세요！세계`, `세계`))
+	println(hdUnicode.Index(`你好！世界`, `世界`))
+	println(hdUnicode.Index(`こんにちは！世界`, `世界`))
+	println(hdUnicode.Index(`안녕하세요！세계`, `세계`))
 
 	// Gets the position of the character.
-	println(hdUnicode.UniIndexOne(`你好！世界`, `世`))
-	println(hdUnicode.UniIndexOne(`こんにちは！世界`, `世`))
-	println(hdUnicode.UniIndexOne(`안녕하세요！세계`, `세`))
+	println(hdUnicode.IndexOne(`你好！世界`, `世`))
+	println(hdUnicode.IndexOne(`こんにちは！世界`, `世`))
+	println(hdUnicode.IndexOne(`안녕하세요！세계`, `세`))
 
 	// Gets the last position of the string.
-	println(hdUnicode.UniLastIndex(`你好！世界！世界`, `世界`))
-	println(hdUnicode.UniLastIndex(`こんにちは！世界！世界`, `世界`))
-	println(hdUnicode.UniLastIndex(`안녕하세요！세계！세계`, `세계`))
+	println(hdUnicode.LastIndex(`你好！世界！世界`, `世界`))
+	println(hdUnicode.LastIndex(`こんにちは！世界！世界`, `世界`))
+	println(hdUnicode.LastIndex(`안녕하세요！세계！세계`, `세계`))
 
 	// Gets the last position of the character.
-	println(hdUnicode.UniLastIndexOne(`你好！世界！世界`, `世`))
-	println(hdUnicode.UniLastIndexOne(`こんにちは！世界！世界`, `世`))
-	println(hdUnicode.UniLastIndexOne(`안녕하세요！세계！세계`, `세`))
+	println(hdUnicode.LastIndexOne(`你好！世界！世界`, `世`))
+	println(hdUnicode.LastIndexOne(`こんにちは！世界！世界`, `世`))
+	println(hdUnicode.LastIndexOne(`안녕하세요！세계！세계`, `세`))
+
+	// Gets the substring, gets it by starting the index and the length of the substring, and returns the substring.
+	println(hdUnicode.SubStr(`你好！世界`, 3, 2))
+	println(hdUnicode.SubStr(`こんにちは！世界！世界`, 3, 2))
+	println(hdUnicode.SubStr(`안녕하세요！세계！세계`, 3, 2))
+
+	// Gets the substring, gets it by starting and closing the index, and returns the substring.
+	println(hdUnicode.SubString(`你好！世界`, 3, 4))
+	println(hdUnicode.SubString(`こんにちは！世界！世界`, 3, 4))
+	println(hdUnicode.SubString(`안녕하세요！세계！세계`, 3, 4))
 }
 ```
