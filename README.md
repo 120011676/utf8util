@@ -1,10 +1,6 @@
 # HeyDon-Lee/utf8Util
 * A Go Programming package for processing UTF-8 character data.
 
-## Features
-* high performance
-* easy to use
-
 ## Install
 ```
 go get github.com/HeyDon-Lee/utf8Util
