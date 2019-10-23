@@ -1,4 +1,4 @@
-package hdUnicode
+package utf8Util
 
 import "strings"
 

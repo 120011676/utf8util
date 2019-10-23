@@ -1,4 +1,4 @@
-package hdUnicode
+package utf8Util
 
 // Gets the substring, gets it by starting the index and the length of the substring, and returns the substring.
 func SubStr(str string, index, len int) string {
