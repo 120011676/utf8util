@@ -1,5 +1,5 @@
 # HeyDon-Lee/utf8Util
-* A Go Programming package for processing UniCode character data.
+* A Go Programming package for processing UTF-8 character data.
 
 ## Features
 * high performance
