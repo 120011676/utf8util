@@ -12,7 +12,7 @@ func LargeIndex(str, substr string) int {
 		i := 0
 		str_len := len(str)
 		for i < str_len {
-			if private_LargeIndex(str, substr, i) {
+			if largeIndex(str, substr, i) {
 				return pos
 			}
 			if str[i] > 127 {
@@ -25,12 +25,12 @@ func LargeIndex(str, substr string) int {
 	return -1
 }
 
-func private_LargeIndex(str, substr string, i int) bool {
+func largeIndex(str, substr string, i int) bool {
 	if str[i] != substr[0] {
 		return false
 	}
 	if len(substr) > 1 {
-		return private_LargeIndex(str, substr[1:], i+1)
+		return largeIndex(str, substr[1:], i+1)
 	}
 	return true
 }
